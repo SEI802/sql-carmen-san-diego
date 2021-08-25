@@ -2,6 +2,8 @@
 
 ## Introduction
 
+> ***Note:*** _This can be a pair programming activity or done independently._
+
 #### Where In The World Is Carmen Sandiego?
 
 We're going to use what we've learned already about searching with SQL commands, and apply it to chase down and capture an elusive and World-renowned thief, Carmen Sandiego. Follow the clues, use the interweb - write down both the SQL commands / queries you used and your answers to the clues - and figure out where Carmen's headed, so we can catch her and bring her in.
@@ -27,13 +29,13 @@ psql -d world
 Use the `\d` command to see what tables are available. You should see:
 
 ```
-world=# \dt
+world=# \d
               List of relations
  Schema |      Name       | Type  |   Owner   
 --------+-----------------+-------+-----------
- public | city            | table | <your-psql-user>
- public | country         | table | <your-psql-user>
- public | countrylanguage | table | <your-psql-user>
+ public | city            | table | moonmayor
+ public | country         | table | moonmayor
+ public | countrylanguage | table | moonmayor
 ```
 
 You can write queries while you're in the `psql` command line interface. It's hard
@@ -53,8 +55,7 @@ Use the clues below to create the appropriate SQL queries to help you find Carme
 
   - **Clue #2:** Now that we're here, we have insight that Carmen was seen attending language classes in this country's officially recognized language. Check our databases and find out what language is spoken in this country, so we can call in a translator to work with you.
 
-  - **Clue #3:** We have new news on the classes Carmen attended: our gumshoes tell us she's moved on to a different country, a country where people speak *only* the language she was learning. Find out which nearby country speaks nothing but that language. Hint: first find the countries where only one language is spoken. Then, in a separate query, find the countries where Italian is spoken. Then cross reference these lists by hand.
-
+  - **Clue #3:** We have new news on the classes Carmen attended: our gumshoes tell us she's moved on to a different country, a country where people speak *only* the language she was learning. Find out which nearby country speaks nothing but that language.
 
   - **Clue #4:** We're booking the first flight out: maybe we've actually got a chance to catch her this time. There are only two cities she could be flying to in the country. One is named the *same* as the country – that would be too obvious. We're following our gut on this one; find out what other city in that country she might be flying to.
 

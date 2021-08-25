@@ -27,7 +27,7 @@ psql -d world
 Use the `\d` command to see what tables are available. You should see:
 
 ```
-world=# \d
+world=# \dt
               List of relations
  Schema |      Name       | Type  |   Owner   
 --------+-----------------+-------+-----------

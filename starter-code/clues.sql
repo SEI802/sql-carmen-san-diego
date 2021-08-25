@@ -62,3 +62,4 @@ SELECT name, population FROM cities WHERE population = 91084;
 
 
 -- She's in _____Santa Monica!!_______________________!
+1	4060	Santa Monica	USA	California	91084

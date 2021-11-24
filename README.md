@@ -1,5 +1,7 @@
 # Use SQL to find Carmen Sandiego
 
+![carmen](carmen.png)
+
 ## Introduction
 
 #### Where In The World Is Carmen Sandiego?
@@ -14,18 +16,19 @@ We're going to use what we've learned already about searching with SQL commands,
 - Use the clues.sql file as your "answer sheet"
 - From the command line, we're going to create a new database called `world` and populate it with the SQL found in `world.sql`
 
-```sql
+```zsh
 psql -f starter-code/world.sql
 ```
 
 Start psql and connect to the new database called world:
 
-```
+```zsh
 psql -d world
 ```
 
-Use the `\d` command to see what tables are available. You should see:
+Use the menu bar to see what table are avaliable: `city` `country` `countrylanguage`
 
+Inside the `terminal` it will look like the following:
 ```
 world=# \dt
               List of relations
@@ -36,6 +39,7 @@ world=# \dt
  public | countrylanguage | table | <your-psql-user>
 ```
 
+#### `Option 1`
 You can write queries while you're in the `psql` command line interface. It's hard
 to edit these commands in place. You can press `\q` to exit psql. `\q` only works
 when you're on an empty line. If you're in the middle of entering text then press enter
@@ -46,6 +50,9 @@ Write your SQL query under the relevant clue in the `clues.sql` file!
 If it doesn't work, rework it and paste it into your `psql` shell.
 
 Use the clues below to create the appropriate SQL queries to help you find Carmen and then, tell us where she's heading!!
+
+#### `Option 2` 
+- [ ] ( recommended ) Use the Postgres Explorer extension
 
 ### The Clues
 
